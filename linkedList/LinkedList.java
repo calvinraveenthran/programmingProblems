@@ -115,4 +115,21 @@ public class LinkedList<AnyType>{
         }
       }
     }
+
+
+    public void kthLastElement(int k){
+      Node<AnyType> kthLast = head;
+      Node<AnyType> last = head;
+
+      for(int i=1; i<k; i++){
+        last = last.next;
+      }
+
+      while(last.next!=null){
+        kthLast=kthLast.next;
+        last=last.next;
+      }
+
+      System.out.print(k + " last element is = " + kthLast.data + "\n");
+    }
 }

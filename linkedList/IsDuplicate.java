@@ -43,6 +43,12 @@ public class IsDuplicate{
       myList.removeDuplicates();
       myList.printList();
 
+      myList.kthLastElement(2);
+      myList.kthLastElement(5);
+
+
+
+
     }
 
 }
